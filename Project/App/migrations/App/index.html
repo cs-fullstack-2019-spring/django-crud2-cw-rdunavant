@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Index</h1>
+<a href="{% url 'user' %}">Create user</a>
+{% for user in user_list %}
+<p><a href="{% url 'edit' user.id %}">
+    {{user.first_name}}
+</a>
+</p>
+<p>{{user.last_name}}</p>
+<p>{{user.email}}</p>
+{% endfor %}
+</body>
+</html>

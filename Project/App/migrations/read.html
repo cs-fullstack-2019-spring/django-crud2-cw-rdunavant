@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Read User</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    "{{readuser}}"
+    <input type='submit' value='Read'/>
+</body>
+</html>
